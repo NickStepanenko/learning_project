@@ -41,6 +41,11 @@
   background-color: #C1C8CE;
 }
 
+.commercial-sale {
+  height: 650px;
+  background-color: #2E90E5;
+}
+
 nav {
   width: 660px;
   height: 90px;
