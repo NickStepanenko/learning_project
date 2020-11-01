@@ -1,0 +1,41 @@
+.commercial-sale {
+  height: 550px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, rgba(0, 0, 0, 0)), color-stop(0%, #2E90E5));
+  background: linear-gradient(rgba(0, 0, 0, 0) 10%, #2E90E5 0%);
+  overflow: hidden;
+}
+
+.commercial-sale-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.commercial-sale-text {
+  color: white;
+}
+
+.commercial-sale-header {
+  font-size: 66pt;
+  font-family: 'Proxima Nova Alt Light', sans-serif;
+}
+
+.commercial-sale-desc {
+  font-size: 24pt;
+  font-family: 'Proxima Nova Regular', sans-serif;
+}
+
+.commercial-sale-to-shop {
+  text-transform: uppercase;
+}
+/*# sourceMappingURL=main-page-commercial.css.map */
