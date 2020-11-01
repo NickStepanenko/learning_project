@@ -56,13 +56,6 @@
   background-color: #C1C8CE;
 }
 
-.commercial-sale {
-  height: 709px;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, rgba(0, 0, 0, 0)), color-stop(0%, #2E90E5));
-  background: linear-gradient(rgba(0, 0, 0, 0) 10%, #2E90E5 0%);
-  overflow: hidden;
-}
-
 nav {
   width: 660px;
   height: 90px;
