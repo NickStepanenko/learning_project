@@ -4,6 +4,7 @@
 
 .latest-news > .container > h2 {
   text-align: center;
+  text-transform: uppercase;
 }
 
 .latest-news-container {
@@ -56,4 +57,4 @@
 .latest-news-text > .latest-news-desc {
   font-size: 12pt;
 }
-/*# sourceMappingURL=latest-news.css.map */
+/*# sourceMappingURL=latest-news-main.css.map */
