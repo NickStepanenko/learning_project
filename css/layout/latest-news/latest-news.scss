@@ -1,0 +1,48 @@
+.latest-news {
+    margin: 7em 0px 0px;
+}
+
+.latest-news > .container > h2 {
+    text-align: center;
+}
+
+.latest-news-container {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row;
+    margin: 4em 0px 0px;
+}
+
+.latest-news-item {
+    max-width: 363.1px;
+    display: flex;
+}
+
+.latest-news-pic {
+    max-width: 140px;
+    max-height: 166px;
+    overflow: hidden;
+
+    & > img {
+        height: 100%;
+    }
+}
+
+.latest-news-text {
+    display: grid;
+    padding: 1em 0em 1em 1.4em;
+
+    & > .latest-news-date {
+        font-size: 10pt;
+        color: #C1C8CE;
+    }
+
+    & > .latest-news-name {
+        font-size: 14pt;
+        font-weight: bold;
+    }
+    
+    & > .latest-news-desc {
+        font-size: 12pt;
+    }
+}

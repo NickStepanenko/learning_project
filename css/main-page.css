@@ -19,6 +19,10 @@
   font-family: 'Proxima Nova Regular', sans-serif;
 }
 
+h2 {
+  font-size: 24pt;
+}
+
 .container {
   max-width: 1170px;
   margin: 0 auto;
@@ -135,5 +139,108 @@ h1 {
 .commercial-sale-img {
   position: relative;
   top: -109px;
+}
+
+.features-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 7em 0px 0px;
+}
+
+.features-item {
+  max-width: 330px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.features-item > i {
+  color: #FF6875;
+}
+
+.features-name {
+  font-family: 'Proxima Nova Alt Bold', sans-serif;
+  font-size: 18pt;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 1em 0;
+}
+
+.latest-news {
+  margin: 7em 0px 0px;
+}
+
+.latest-news > .container > h2 {
+  text-align: center;
+}
+
+.latest-news-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  margin: 4em 0px 0px;
+}
+
+.latest-news-item {
+  max-width: 363.1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.latest-news-pic {
+  max-width: 140px;
+  max-height: 166px;
+  overflow: hidden;
+}
+
+.latest-news-pic > img {
+  height: 100%;
+}
+
+.latest-news-text {
+  display: -ms-grid;
+  display: grid;
+  padding: 1em 0em 1em 1.4em;
+}
+
+.latest-news-text > .latest-news-date {
+  font-size: 10pt;
+  font-weight: bold;
+  color: #C1C8CE;
+}
+
+.latest-news-text > .latest-news-name {
+  font-size: 14pt;
+  font-weight: bold;
+}
+
+.latest-news-text > .latest-news-desc {
+  font-size: 12pt;
 }
 /*# sourceMappingURL=main-page.css.map */
