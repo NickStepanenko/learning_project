@@ -1,0 +1,44 @@
+.contact-info-block {
+  display: -ms-grid;
+  display: grid;
+  grid-template: "a b c" 4em "a b c" 9em;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  border-bottom: 2px solid #F6F7F8;
+}
+
+.contact-info-block > div {
+  max-width: 268.59px;
+  font-size: 10pt;
+}
+
+.contact-info-block > span, .contact-info-block svg {
+  font-family: 'Proxima Nova SemiBold', sans-serif;
+  font-size: 14pt;
+}
+
+.contact-info-block .contact-info-follow-us-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 2em;
+}
+
+.contact-info-block .contact-info-follow-us-icons > a {
+  cursor: unset;
+}
+
+.contact-info-block .contact-info-follow-us-icons > a > i {
+  margin: 0 3em 0 0;
+  cursor: pointer;
+}
+
+.contact-info-block .fa.fa-facebook-f {
+  color: #385C8E;
+}
+
+.contact-info-block .fa.fa-twitter {
+  color: #03A9F4;
+}
+/*# sourceMappingURL=contact-info-block.css.map */

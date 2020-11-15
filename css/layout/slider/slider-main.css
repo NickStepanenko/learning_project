@@ -1,0 +1,90 @@
+.slider {
+  height: 650px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(-25%, #FF4858), color-stop(80%, #A65FDD), color-stop(125%, #9D65FF));
+  background: linear-gradient(to right, #FF4858 -25%, #A65FDD 80%, #9D65FF 125%);
+  overflow: hidden;
+}
+
+.slider-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.slider-content > .slider-next, .slider-content .slider-prev {
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 8em;
+}
+
+.slider-content > .slider-prev {
+  left: -2em;
+}
+
+.slider-content > .slider-next {
+  right: -2em;
+}
+
+.slider-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slider-item > .slider-item-text {
+  color: white;
+  display: -ms-grid;
+  display: grid;
+  max-width: 330px;
+  max-height: 235px;
+  -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  grid-template: "a" 6em "a" 6em "a" 6em;
+  margin-bottom: 8em;
+}
+
+.slider-item > .slider-item-text > .slider-item-header {
+  font-family: 'Proxima Nova SemiBold', sans-serif;
+  font-size: 30pt;
+}
+
+.slider-item > .slider-item-text > .slider-item-desc {
+  font-size: 11pt;
+}
+
+.slider-item > .slider-item-text > .slider-item-more {
+  text-transform: uppercase;
+  cursor: pointer;
+  width: 2.8em;
+  height: 2em;
+}
+
+.slider-item > .slider-item-text > .slider-item-more:after {
+  content: '';
+  display: block;
+  border-bottom: 3px solid #fff;
+  width: 100%;
+  padding-top: 0.5em;
+}
+
+.slider-item > .slider-item-img {
+  max-width: 729px;
+  max-height: 650px;
+  position: relative;
+  top: 10%;
+}
+/*# sourceMappingURL=slider-main.css.map */

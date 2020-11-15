@@ -1,16 +1,3 @@
-@font-face {
-    font-family: Proxima Nova Regular;
-    src: url("fonts/ProximaNova-Regular.otf") format("opentype");
-}
-@font-face {
-    font-family: Proxima Nova Bold;
-    src: url("fonts/Proxima\ Nova\ Bold.otf") format("opentype");
-}
-@font-face {
-    font-family: Proxima Nova Thin;
-    src: url("fonts/Proxima\ Nova\ Thin.otf") format("opentype");
-}
-  
 * {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -35,12 +22,6 @@ h2 {
             justify-content: space-between;
 }
   
-.slider {
-    height: 650px;
-    background: -webkit-gradient(linear, left top, right top, from(#FF4858), to(#9D65FF));
-    background: linear-gradient(to right, #FF4858, #9D65FF);
-}
-  
 .some-hot-offer {
     width: 390px;
     height: 280px;
@@ -57,7 +38,21 @@ h2 {
 #hot-offer-3 {
     background-color: #C1C8CE;
 }
-  
+
+.nav-link {
+    color: black;
+    text-decoration: unset;
+    font-family: 'Proxima Nova Semibold', sans-serif;
+
+    &:active {
+        color: #33A0FF;
+    }
+
+    &:hover {
+        color: #33A0FF;
+    }
+}
+
 nav {
     width: 660px;
     height: 90px;
@@ -76,8 +71,11 @@ nav {
             justify-content: space-between;
 }
   
-h1 {
-    width: 190px;
+.nav-logo {
     margin: 0 auto;
     text-align: center;
+}
+
+footer {
+    margin-top: 7em;
 }

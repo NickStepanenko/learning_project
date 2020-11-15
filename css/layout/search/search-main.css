@@ -28,22 +28,26 @@
 }
 
 .search-content > input::-webkit-input-placeholder {
-  font-size: 14pt;
+  font-family: 'Proxima Nova SemiBold', sans-serif;
+  font-size: 11pt;
   color: #7e7e7e;
 }
 
 .search-content > input:-ms-input-placeholder {
-  font-size: 14pt;
+  font-family: 'Proxima Nova SemiBold', sans-serif;
+  font-size: 11pt;
   color: #7e7e7e;
 }
 
 .search-content > input::-ms-input-placeholder {
-  font-size: 14pt;
+  font-family: 'Proxima Nova SemiBold', sans-serif;
+  font-size: 11pt;
   color: #7e7e7e;
 }
 
 .search-content > input::placeholder {
-  font-size: 14pt;
+  font-family: 'Proxima Nova SemiBold', sans-serif;
+  font-size: 11pt;
   color: #7e7e7e;
 }
 

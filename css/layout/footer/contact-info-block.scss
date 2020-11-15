@@ -1,0 +1,40 @@
+.contact-info-block {
+    display: grid;
+    grid-template:
+        "a b c" 4em
+        "a b c" 9em;
+    align-items: baseline;
+    border-bottom: 2px solid #F6F7F8;
+    
+    & > div {
+        max-width: 268.59px;
+        font-size: 10pt;
+    }
+
+    & > span, svg {
+        font-family: 'Proxima Nova SemiBold', sans-serif;
+        font-size: 14pt;
+    }
+
+    .contact-info-follow-us-icons {
+        display: flex;
+        padding-top: 2em;
+
+        & > a {
+            cursor: unset;
+        }
+
+        & > a > i {
+            margin: 0 3em 0 0;
+            cursor: pointer;
+        }
+    }
+
+    .fa.fa-facebook-f {
+        color: #385C8E;
+    }
+
+    .fa.fa-twitter {
+        color: #03A9F4;
+    }
+}

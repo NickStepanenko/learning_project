@@ -1,0 +1,16 @@
+.bottom-item-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
+
+    & > .bottom-item-copyright {
+        color: #C1C8CE;
+        font-size: 10pt;
+    }
+
+    & > .bottom-item-icons {
+        width: 212.43px;
+        display: flex;
+        justify-content: space-between;
+    }
+}

@@ -1,0 +1,25 @@
+.bottom-item-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 2em;
+}
+
+.bottom-item-content > .bottom-item-copyright {
+  color: #C1C8CE;
+  font-size: 10pt;
+}
+
+.bottom-item-content > .bottom-item-icons {
+  width: 212.43px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+/*# sourceMappingURL=bottom-items.css.map */

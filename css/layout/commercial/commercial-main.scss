@@ -20,7 +20,7 @@
 
 .commercial-sale-header {
     font-size: 48pt;
-    font-family: 'Proxima Nova Thin', sans-serif;
+    font-family: 'Proxima Nova Light', sans-serif;
 }
 .commercial-sale-desc {
     font-size: 18pt;
@@ -34,7 +34,8 @@
         content: '';
         display: block;
         border-bottom: 3px solid #fff;
-        width: 20%
+        width: 20%;
+        padding-top: 0.5em;
     }
 }
 
