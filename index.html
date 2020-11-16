@@ -10,7 +10,7 @@
 <body>
     <header>
         <div class="container flex-container">
-            <div class="language-currency-chouse">
+            <div class="language-currency-choice">
                 <select name="language" id="">
                     <option value="english">EN</option>
                     <option value="russian">RU</option>
@@ -21,10 +21,10 @@
                     <option value="rubles">RUB</option>
                 </select>
             </div>
-            <div>
-                <a href="" class="my-profile-link">My profile</a>
-                <a href="" class="basket-link">0 items</a>
-                <a href="" class="searchbar">Search</a>
+            <div class="main-links">
+                <div class="my-profile-link"><i class="fa fa-user fa-lg"></i>My profile</div>
+                <div class="basket-link"><i class="fa fa-shopping-basket fa-lg"></i><div class="items-count">0</div>Items<div class="overall-price">0.00</div></div>
+                <div class="searchbar"><i class="fa fa-search fa-lg"></i></div>
             </div>
         </div>
         <nav class="main-navbar">
@@ -51,7 +51,7 @@
                     <div class="slider-item-text">
                         <div class="slider-item-header">iPhone X</div>
                         <div class="slider-item-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</div>
-                        <div class="slider-item-more">more</div>
+                        <div class="slider-item-more"></div>
                     </div>
                     <div class="slider-item-img">
                         <img src="img/iphonex_spacegray.png"/>
@@ -64,10 +64,32 @@
         </div>
     </section>
     <section class="hot-offers">
-        <div class="container flex-container">
-            <div class="some-hot-offer" id="hot-offer-1">Some text</div>
-            <div class="some-hot-offer" id="hot-offer-2">Some text</div>
-            <div class="some-hot-offer" id="hot-offer-3">Some text</div>
+        <div class="container">
+            <div class="hot-offer-row flex-container">
+                <div class="some-hot-offer" id="hot-offer-1">
+                    <div class="hot-offer-text">
+                        <div class="hot-offer-header">iPhone 6</div>
+                        <div class="hot-offer-desc">Lorem Ipsum dolor sit amet, consectetur adipiscing elit, labor</div>
+                        <div class="hot-offer-price">399</div>
+                    </div>
+                    <img class="hot-offer-img" src="img/iPhone6s_discover_desktop_08_iOS9.png" />
+                </div>
+                <div class="some-hot-offer" id="hot-offer-2">
+                    <div class="hot-offer-text">
+                        <div class="hot-offer-header">Oculus Rift</div>
+                        <div class="hot-offer-price">349</div>
+                    </div>
+                    <img class="hot-offer-img" src="img/Oculus-Rift-profile_grande.png" />
+                </div>
+                <div class="some-hot-offer" id="hot-offer-3">
+                    <div class="hot-offer-text">
+                        <div class="hot-offer-header">GoPro Hero 6</div>
+                        <div class="hot-offer-desc">Lorem Ipsum dolor sit amet, consectetur adipiscing elit, labor</div>
+                        <div class="hot-offer-price">299</div>
+                    </div>
+                    <img class="hot-offer-img" src="img/50051823_540375.png" />
+                </div>
+            </div>
         </div>
     </section>
     <section class=best-seller>
@@ -81,7 +103,7 @@
                 <div class="commercial-sale-text">
                     <div class="commercial-sale-header">iPhone 6 Plus</div>
                     <div class="commercial-sale-desc">Performance and design. Taken right to the edge.</div>
-                    <div class="commercial-sale-to-shop">Shop now</div>
+                    <div class="commercial-sale-to-shop"></div>
                 </div>
                 <div class="commercial-sale-img">
                     <img src="img/iPhone6s_discover_desktop_08_iOS9.png"></img>
@@ -215,7 +237,7 @@
         <div class="container">
             <div class="search-content">
                 <input type="text" placeholder="Search query...">
-                <span>Search</span>
+                <span><div>Search</div></span>
             </div>
         </div>
     </section>
@@ -231,8 +253,8 @@
                     <div class="contact-info-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.Since the 1500s, when an unknown printer.</div>
                     <div class="contact-info-follow-us-text">Since the 1500s, when an unknown printer took a galley of type and scrambled.<br/>
                         <div class="contact-info-follow-us-icons">
-                            <a href="#"><i class="fa fa-facebook-f fa-1x"></i></a>
-                            <a href="#"><i class="fa fa-twitter fa-1x"></i></a>
+                            <a href="#"><i class="fa fa-facebook-f fa-lg"></i></a>
+                            <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
                         </div>
                     </div>
                     <div>

@@ -5,13 +5,14 @@
 .featured > .container > h2 {
     text-align: center;
     text-transform: uppercase;
+    font-size: 22.5pt;
 }
 
 .featured-container {
     display: flex;
     justify-content: space-between;
     flex-flow: row;
-    margin: 4em 0px 0px;
+    margin: 4em 0 0;
 }
 
 .featured-item {
@@ -34,8 +35,8 @@
     grid-template-rows: 1.6fr 1fr 2fr;
     
     & > .featured-item-name {
-        font-size: 12pt;
-        font-weight: bold;
+        font-size: 10.5pt;
+        font-family: 'Proxima Nova Bold', sans-serif;
     }
 
     & > .featured-item-rating {
@@ -57,7 +58,7 @@
 
     & > .featured-item-price {
         display: flex;
-        font-size: 14pt;
+        font-size: 12pt;
 
         & > .discount {
             color: #FF4858;

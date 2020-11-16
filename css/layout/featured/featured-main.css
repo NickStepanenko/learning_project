@@ -5,6 +5,7 @@
 .featured > .container > h2 {
   text-align: center;
   text-transform: uppercase;
+  font-size: 22.5pt;
 }
 
 .featured-container {
@@ -18,7 +19,7 @@
   -webkit-box-direction: normal;
       -ms-flex-flow: row;
           flex-flow: row;
-  margin: 4em 0px 0px;
+  margin: 4em 0 0;
 }
 
 .featured-item {
@@ -46,8 +47,8 @@
 }
 
 .featured-text > .featured-item-name {
-  font-size: 12pt;
-  font-weight: bold;
+  font-size: 10.5pt;
+  font-family: 'Proxima Nova Bold', sans-serif;
 }
 
 .featured-text > .featured-item-rating {
@@ -73,7 +74,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 14pt;
+  font-size: 12pt;
 }
 
 .featured-text > .featured-item-price > .discount {

@@ -1,7 +1,7 @@
 .commercial-sale {
-    height: 600px;
-    background-color: #2E90E5;
-    margin-top: 109px;
+    height: 709px;
+    background: linear-gradient(rgba(0,0,0,0) 15.373%, rgba(46,144,229, 1) 15.373%, rgba(46,144,229, 1) 100%);
+    overflow: hidden;
 }
 
 .commercial-sale-content {
@@ -12,14 +12,19 @@
 }
 
 .commercial-sale-text {
-    color: white;
     width: 393.42px;
     height: 274.45px;
     display: grid;
+    position: relative;
+    top: 4em;
+
+    & > div {
+        color: white;
+    }
 }
 
 .commercial-sale-header {
-    font-size: 48pt;
+    font-size: 49.5pt;
     font-family: 'Proxima Nova Light', sans-serif;
 }
 .commercial-sale-desc {
@@ -28,18 +33,24 @@
 }
 .commercial-sale-to-shop {
     text-transform: uppercase;
-    font-size: 11pt;
+    font-size: 10.5pt;
 
     &:after {
-        content: '';
+        content: 'Shop now';
+        font-family: 'Proxima Nova Bold', sans-serif;
+        width: fit-content;
         display: block;
         border-bottom: 3px solid #fff;
-        width: 20%;
-        padding-top: 0.5em;
+        padding: 0.5em 0;
+        cursor: pointer;
     }
 }
 
 .commercial-sale-img {
-    position: relative;
-    top: -109px;
+    & > img {
+        transform: scale(1.41);
+        position: relative;
+        top: 9.688em;
+        right: 2em;
+    }
 }

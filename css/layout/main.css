@@ -2,6 +2,7 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-family: 'Proxima Nova Regular', sans-serif;
+  color: #22262A;
 }
 
 h2 {
@@ -22,27 +23,79 @@ h2 {
   justify-content: space-between;
 }
 
-.some-hot-offer {
-  width: 390px;
-  height: 280px;
+.language-currency-choice > select {
+  border: 0;
 }
 
-#hot-offer-1 {
-  background-color: #FF6875;
+.main-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-#hot-offer-2 {
-  background-color: #F6F7F8;
+.main-links > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 10.5pt;
+  font-family: 'Proxima Nova Semibold', sans-serif;
+  padding-right: 2em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-#hot-offer-3 {
-  background-color: #C1C8CE;
+.main-links > .my-profile-link {
+  cursor: pointer;
+}
+
+.main-links > .my-profile-link > i {
+  padding-right: 0.4em;
+}
+
+.main-links > .basket-link {
+  cursor: pointer;
+}
+
+.main-links > .basket-link > div {
+  font-family: 'Proxima Nova Semibold', sans-serif;
+}
+
+.main-links > .basket-link > i {
+  padding-right: 0.4em;
+}
+
+.main-links > .basket-link > .items-count {
+  padding-right: 0.3em;
+}
+
+.main-links > .basket-link > .overall-price {
+  font-size: 10.5pt;
+  color: #C1C8CE;
+  padding: 0 0.3em;
+}
+
+.main-links > .basket-link > .overall-price:before {
+  content: '$';
+}
+
+.main-links > .searchbar {
+  padding-left: 4em;
+}
+
+.main-links > .searchbar > i {
+  cursor: pointer;
 }
 
 .nav-link {
   color: black;
   text-decoration: unset;
   font-family: 'Proxima Nova Semibold', sans-serif;
+  font-size: 10.5pt;
+  text-transform: uppercase;
 }
 
 .nav-link:active {

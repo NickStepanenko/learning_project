@@ -44,7 +44,6 @@
 }
 
 .slider-item > .slider-item-text {
-  color: white;
   display: -ms-grid;
   display: grid;
   max-width: 330px;
@@ -57,34 +56,40 @@
   margin-bottom: 8em;
 }
 
+.slider-item > .slider-item-text > div {
+  color: white;
+}
+
 .slider-item > .slider-item-text > .slider-item-header {
-  font-family: 'Proxima Nova SemiBold', sans-serif;
-  font-size: 30pt;
+  font-family: 'Proxima Nova Bold', sans-serif;
+  font-size: 27pt;
 }
 
 .slider-item > .slider-item-text > .slider-item-desc {
-  font-size: 11pt;
+  font-size: 10.5pt;
 }
 
 .slider-item > .slider-item-text > .slider-item-more {
   text-transform: uppercase;
-  cursor: pointer;
-  width: 2.8em;
-  height: 2em;
+  font-size: 10.5pt;
 }
 
 .slider-item > .slider-item-text > .slider-item-more:after {
-  content: '';
+  content: 'more';
+  font-family: 'Proxima Nova Bold', sans-serif;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   display: block;
   border-bottom: 3px solid #fff;
-  width: 100%;
-  padding-top: 0.5em;
+  padding: 0.5em 0;
+  cursor: pointer;
 }
 
 .slider-item > .slider-item-img {
   max-width: 729px;
   max-height: 650px;
   position: relative;
-  top: 10%;
+  top: 1.5em;
 }
 /*# sourceMappingURL=slider-main.css.map */

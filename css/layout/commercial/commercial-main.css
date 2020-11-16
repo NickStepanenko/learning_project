@@ -1,7 +1,8 @@
 .commercial-sale {
-  height: 600px;
-  background-color: #2E90E5;
-  margin-top: 109px;
+  height: 709px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(15.373%, rgba(0, 0, 0, 0)), color-stop(15.373%, #2e90e5), to(#2e90e5));
+  background: linear-gradient(rgba(0, 0, 0, 0) 15.373%, #2e90e5 15.373%, #2e90e5 100%);
+  overflow: hidden;
 }
 
 .commercial-sale-content {
@@ -21,15 +22,20 @@
 }
 
 .commercial-sale-text {
-  color: white;
   width: 393.42px;
   height: 274.45px;
   display: -ms-grid;
   display: grid;
+  position: relative;
+  top: 4em;
+}
+
+.commercial-sale-text > div {
+  color: white;
 }
 
 .commercial-sale-header {
-  font-size: 48pt;
+  font-size: 49.5pt;
   font-family: 'Proxima Nova Light', sans-serif;
 }
 
@@ -40,19 +46,26 @@
 
 .commercial-sale-to-shop {
   text-transform: uppercase;
-  font-size: 11pt;
+  font-size: 10.5pt;
 }
 
 .commercial-sale-to-shop:after {
-  content: '';
+  content: 'Shop now';
+  font-family: 'Proxima Nova Bold', sans-serif;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   display: block;
   border-bottom: 3px solid #fff;
-  width: 20%;
-  padding-top: 0.5em;
+  padding: 0.5em 0;
+  cursor: pointer;
 }
 
-.commercial-sale-img {
+.commercial-sale-img > img {
+  -webkit-transform: scale(1.41);
+          transform: scale(1.41);
   position: relative;
-  top: -109px;
+  top: 9.688em;
+  right: 2em;
 }
 /*# sourceMappingURL=commercial-main.css.map */
