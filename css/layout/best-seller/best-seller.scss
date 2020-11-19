@@ -1,0 +1,135 @@
+.best-seller-nav {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    height: 29px;
+    width: 478px;
+
+    & > .best-seller-nav-item {
+        display: inline-block;
+        cursor: pointer;
+        font-family: 'Proxima Nova Semibold', sans-serif;
+        font-size: 10.5pt;
+        transition: color 0.3s;
+
+        &::after {
+            content: '';
+            display: block;
+            margin: 0.5em 0 0;
+            background-color: #33A0FF;
+            height: 3px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        &:hover {
+            color: #33A0FF;
+        }
+
+        &:hover::after {
+            opacity: 100%;
+        }
+    }
+}
+
+.best-seller-items {
+    display: grid;
+    grid-template: 
+        "a b c d" 364px
+        "a b c d" 364px;
+
+    & > .best-seller-item {
+        display: grid;
+        width: 270px;
+        height: 349px;
+        border: 2px solid #F6F7F8;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+        align-items: flex-end;
+
+        & > .best-seller-item-hot {
+            position: absolute;
+            left: 4%;
+            top: 3%;
+            background-color: #FF4858;
+            color: white;
+            text-transform: uppercase;
+            width: 40px;
+            height: 20px;
+            border-radius: 10%;
+            font-family: 'Proxima Nova Semibold', sans-serif;
+            font-size: 10.5pt;
+            padding: 0.1em 0;
+        }
+
+        & > .best-seller-item-img {
+            width: 236px;
+            height: 153px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+            cursor: pointer;
+            align-self: flex-end;
+
+            & > img {
+                width: 100%;
+                height: auto;
+                opacity: 1;
+                display: block;
+                transition: .3s ease;
+                backface-visibility: hidden;
+            }
+
+            & > .best-seller-item-img-hover {
+                display: flex;
+                position: absolute;
+                transition: opacity .3s;
+                opacity: 0;
+                width: 100%;
+                height: auto;
+                justify-content: center;
+                transform: translateY(100%);
+
+                & > div {
+                    border-radius: 50%;
+                    border: 2px solid rgba(51,160,255, 0.25);
+                    padding: 0.8em;
+                    margin: 0 0.4em;
+
+                    & > i {
+                        color: #33A0FF;
+                    }
+                }
+            }
+
+            &:hover > img {
+                opacity: 0.1;
+            }
+
+            &:hover > .best-seller-item-img-hover {
+                opacity: 1;
+            }
+        }
+
+        & > .best-seller-item-name {
+            font-family: 'Proxima Nova Semibold', sans-serif;
+            font-size: 10.5pt;
+            text-align: center;
+            height: 100%;
+            transform: translateY(50%);
+        }
+
+        & > .item-rating {
+            display: flex;
+            justify-content: center;
+        }
+
+        & > .best-seller-price {
+            display: flex;
+            justify-content: center;
+            align-self: center;
+        }
+    }
+}

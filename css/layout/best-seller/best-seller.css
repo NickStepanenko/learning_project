@@ -1,0 +1,169 @@
+.best-seller-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 29px;
+  width: 478px;
+}
+
+.best-seller-nav > .best-seller-nav-item {
+  display: inline-block;
+  cursor: pointer;
+  font-family: 'Proxima Nova Semibold', sans-serif;
+  font-size: 10.5pt;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.best-seller-nav > .best-seller-nav-item::after {
+  content: '';
+  display: block;
+  margin: 0.5em 0 0;
+  background-color: #33A0FF;
+  height: 3px;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+.best-seller-nav > .best-seller-nav-item:hover {
+  color: #33A0FF;
+}
+
+.best-seller-nav > .best-seller-nav-item:hover::after {
+  opacity: 100%;
+}
+
+.best-seller-items {
+  display: -ms-grid;
+  display: grid;
+  grid-template: "a b c d" 364px "a b c d" 364px;
+}
+
+.best-seller-items > .best-seller-item {
+  display: -ms-grid;
+  display: grid;
+  width: 270px;
+  height: 349px;
+  border: 2px solid #F6F7F8;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  position: relative;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.best-seller-items > .best-seller-item > .best-seller-item-hot {
+  position: absolute;
+  left: 4%;
+  top: 3%;
+  background-color: #FF4858;
+  color: white;
+  text-transform: uppercase;
+  width: 40px;
+  height: 20px;
+  border-radius: 10%;
+  font-family: 'Proxima Nova Semibold', sans-serif;
+  font-size: 10.5pt;
+  padding: 0.1em 0;
+}
+
+.best-seller-items > .best-seller-item > .best-seller-item-img {
+  width: 236px;
+  height: 153px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  cursor: pointer;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.best-seller-items > .best-seller-item > .best-seller-item-img > img {
+  width: 100%;
+  height: auto;
+  opacity: 1;
+  display: block;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.best-seller-items > .best-seller-item > .best-seller-item-img > .best-seller-item-img-hover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s;
+  opacity: 0;
+  width: 100%;
+  height: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+}
+
+.best-seller-items > .best-seller-item > .best-seller-item-img > .best-seller-item-img-hover > div {
+  border-radius: 50%;
+  border: 2px solid rgba(51, 160, 255, 0.25);
+  padding: 0.8em;
+  margin: 0 0.4em;
+}
+
+.best-seller-items > .best-seller-item > .best-seller-item-img > .best-seller-item-img-hover > div > i {
+  color: #33A0FF;
+}
+
+.best-seller-items > .best-seller-item > .best-seller-item-img:hover > img {
+  opacity: 0.1;
+}
+
+.best-seller-items > .best-seller-item > .best-seller-item-img:hover > .best-seller-item-img-hover {
+  opacity: 1;
+}
+
+.best-seller-items > .best-seller-item > .best-seller-item-name {
+  font-family: 'Proxima Nova Semibold', sans-serif;
+  font-size: 10.5pt;
+  text-align: center;
+  height: 100%;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+}
+
+.best-seller-items > .best-seller-item > .item-rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.best-seller-items > .best-seller-item > .best-seller-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+/*# sourceMappingURL=best-seller.css.map */

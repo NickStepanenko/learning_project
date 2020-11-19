@@ -1,7 +1,11 @@
+.bottom-items {
+    border-top: 2px solid #F6F7F8;
+}
+
 .bottom-item-content {
     display: flex;
     justify-content: space-between;
-    margin-top: 2em;
+    margin: 2em 0;
 
     & > .bottom-item-copyright {
         color: #C1C8CE;

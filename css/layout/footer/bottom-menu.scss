@@ -1,18 +1,12 @@
 .bottom-menu-content {
     display: grid;
     grid-template:
-        "a b c e f g" 3em
+        "a b c e f g" 4em
         "a b c e f g" 2em
         "a b c e f g" 2em
         "a b c e f g" 2em
         "a b c e f g" 4em;
-    margin-top: 3em;
-    border-bottom: 2px solid #F6F7F8;
-
-    & > .bottom-menu-content-header {
-        font-family: 'Proxima Nova SemiBold', sans-serif;
-        font-size: 13.5pt;
-    }
+    margin-top: 2em;
 
     & > .bottom-menu-content-item {
         font-size: 10.5pt;

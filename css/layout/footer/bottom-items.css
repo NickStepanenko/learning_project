@@ -1,3 +1,7 @@
+.bottom-items {
+  border-top: 2px solid #F6F7F8;
+}
+
 .bottom-item-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5,7 +9,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 2em;
+  margin: 2em 0;
 }
 
 .bottom-item-content > .bottom-item-copyright {

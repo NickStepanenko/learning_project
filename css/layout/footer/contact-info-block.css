@@ -1,10 +1,11 @@
 .contact-info-block {
   display: -ms-grid;
   display: grid;
-  grid-template: "a b c" 4em "a b c" 9em;
+  grid-template: "a b c" 4em "a b c" 7em;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+  margin-top: 3em;
   border-bottom: 2px solid #F6F7F8;
 }
 

@@ -2,12 +2,6 @@
     margin: 7em 0px 0px;
 }
 
-.featured > .container > h2 {
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 22.5pt;
-}
-
 .featured-container {
     display: flex;
     justify-content: space-between;
@@ -39,39 +33,7 @@
         font-family: 'Proxima Nova Bold', sans-serif;
     }
 
-    & > .featured-item-rating {
-        display: flex;
-
-        & > i {
-            margin: 0 0.5em 0 0;
-            font-size: 0.75em;
-        }
-
-        & > i.fa-star.active {
-            color: #FFC600;
-        }
-
-        & > i.fa-star.inactive {
-            color: #C1C8CE;
-        }
-    }
-
     & > .featured-item-price {
         display: flex;
-        font-size: 12pt;
-
-        & > .discount {
-            color: #FF4858;
-        }
-
-        & > .discount:before, .standart:before {
-            content: '$';
-        }
-
-        & > .standart {
-            text-decoration: line-through;
-            color: #C1C8CE;
-            margin: 0 0 0 0.5em;
-        }
     }
 }

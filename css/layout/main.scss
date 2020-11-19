@@ -6,7 +6,15 @@
 }
 
 h2 {
-    font-size: 24pt;
+    font-family: 'Proxima Nova Semibold', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 22.5pt;
+}
+
+h3 {
+    font-family: 'Proxima Nova Semibold', sans-serif;
+    font-size: 13.5pt;
 }
   
 .container {
@@ -90,6 +98,7 @@ h2 {
     font-family: 'Proxima Nova Semibold', sans-serif;
     font-size: 10.5pt;
     text-transform: uppercase;
+    transition: color .3s;
 
     &:active {
         color: #33A0FF;
@@ -123,6 +132,47 @@ nav {
     text-align: center;
 }
 
+.item-rating {
+    display: flex;
+
+    & > i {
+        margin: 0 0.25em 0 0.25em;
+        font-size: 0.68em;
+    }
+    
+    & > i.fa-star.active {
+        color: #FFC600;
+    }
+
+    & > i.fa-star.inactive {
+        color: #C1C8CE;
+    }
+}
+
+.price {
+    font-size: 12pt;
+    margin: 0 0.25em 0 0.25em;
+}
+
+.price.discount:before, .price.old:before {
+    content: '$';
+}
+
+.price.discount {
+    color: #FF4858;
+}
+
+.price.old {
+    text-decoration: line-through;
+    color: #C1C8CE;
+}
+
+.separator {
+    height: 2px;
+    background-color: #F6F7F8;
+}
+
 footer {
     margin-top: 7em;
+    border-top: 2px solid #F6F7F8;
 }
