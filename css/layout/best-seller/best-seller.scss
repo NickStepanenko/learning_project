@@ -2,14 +2,14 @@
     display: flex;
     margin: 0 auto;
     justify-content: space-between;
-    height: 29px;
     width: 478px;
+    padding: 0 0 1em;
 
     & > .best-seller-nav-item {
         display: inline-block;
         cursor: pointer;
         font-family: 'Proxima Nova Semibold', sans-serif;
-        font-size: 10.5pt;
+        font-size: 14px;
         transition: color 0.3s;
 
         &::after {
@@ -37,11 +37,10 @@
     grid-template: 
         "a b c d" 364px
         "a b c d" 364px;
+    gap: 1em;
 
     & > .best-seller-item {
         display: grid;
-        width: 270px;
-        height: 349px;
         border: 2px solid #F6F7F8;
         justify-content: center;
         text-align: center;
@@ -59,7 +58,7 @@
             height: 20px;
             border-radius: 10%;
             font-family: 'Proxima Nova Semibold', sans-serif;
-            font-size: 10.5pt;
+            font-size: 14px;
             padding: 0.1em 0;
         }
 
@@ -70,7 +69,6 @@
             display: flex;
             justify-content: center;
             overflow: hidden;
-            cursor: pointer;
             align-self: flex-end;
 
             & > img {
@@ -92,15 +90,27 @@
                 justify-content: center;
                 transform: translateY(100%);
 
-                & > div {
+                & > button {
                     border-radius: 50%;
+                    background-color: rgba(0,0,0,0);
                     border: 2px solid rgba(51,160,255, 0.25);
                     padding: 0.8em;
                     margin: 0 0.4em;
+                    transition: background-color .3s;
 
                     & > i {
                         color: #33A0FF;
                     }
+                }
+
+                & > button:hover {
+                    cursor: pointer;
+                    background-color: rgba(255, 255, 255, 0.45);
+                }
+
+                & > button:focus {
+                    cursor: pointer;
+                    outline: 0;
                 }
             }
 
@@ -115,7 +125,7 @@
 
         & > .best-seller-item-name {
             font-family: 'Proxima Nova Semibold', sans-serif;
-            font-size: 10.5pt;
+            font-size: 14px;
             text-align: center;
             height: 100%;
             transform: translateY(50%);

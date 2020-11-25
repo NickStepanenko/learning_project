@@ -5,18 +5,22 @@
     color: #22262A;
 }
 
+body {
+    margin: 0;
+}
+
 h2 {
     font-family: 'Proxima Nova Semibold', sans-serif;
     text-align: center;
     text-transform: uppercase;
-    font-size: 22.5pt;
+    font-size: 30px;
 }
 
 h3 {
     font-family: 'Proxima Nova Semibold', sans-serif;
-    font-size: 13.5pt;
+    font-size: 18px;
 }
-  
+
 .container {
     max-width: 1170px;
     margin: 0 auto;
@@ -43,7 +47,7 @@ h3 {
 
     & > div {
         display: flex;
-        font-size: 10.5pt;
+        font-size: 14px;
         font-family: 'Proxima Nova Semibold', sans-serif;
         padding-right: 2em;
         align-items: center;
@@ -73,7 +77,7 @@ h3 {
         }
         
         & > .overall-price {
-            font-size: 10.5pt;
+            font-size: 14px;
             color: #C1C8CE;
             padding: 0 0.3em;
 
@@ -92,11 +96,15 @@ h3 {
     }
 }
 
+.main-navbar {
+    gap: 3em;
+}
+
 .nav-link {
     color: black;
     text-decoration: unset;
     font-family: 'Proxima Nova Semibold', sans-serif;
-    font-size: 10.5pt;
+    font-size: 14px;
     text-transform: uppercase;
     transition: color .3s;
 
@@ -111,10 +119,8 @@ h3 {
 
 nav {
     width: 660px;
-    height: 90px;
     margin: 0 auto;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    padding: 2.5em;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -135,22 +141,46 @@ nav {
 .item-rating {
     display: flex;
 
-    & > i {
-        margin: 0 0.25em 0 0.25em;
-        font-size: 0.68em;
+    & > button {
+        background-color: rgba(0,0,0,0);
+        border: 0;
+        padding: 0 0.25em;
+
+        & > i {
+            font-size: 10px;
+            cursor: pointer;
+            transition: color .2s;
+        }
+        
+        & > i.fa-star.active {
+            color: #FFC600;
+        }
+    
+        & > i.fa-star.inactive {
+            color: #C1C8CE;
+        }
+
+        & > i.fa-star:hover {
+            color: #FFC600;
+        }
+    
+        & > i.fa-star:focus {
+            outline: 0;
+        }
     }
     
-    & > i.fa-star.active {
-        color: #FFC600;
-    }
-
-    & > i.fa-star.inactive {
-        color: #C1C8CE;
+    & > button:focus {
+        cursor: pointer;
+        outline: 0;
+        
+        & > i {
+            background-color: rgba(255, 255, 255, 0.45);
+        }
     }
 }
 
 .price {
-    font-size: 12pt;
+    font-size: 16px;
     margin: 0 0.25em 0 0.25em;
 }
 
@@ -173,6 +203,5 @@ nav {
 }
 
 footer {
-    margin-top: 7em;
     border-top: 2px solid #F6F7F8;
 }

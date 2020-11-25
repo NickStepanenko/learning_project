@@ -44,15 +44,15 @@
 }
 
 .slider-item > .slider-item-text {
-  display: -ms-grid;
-  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   max-width: 330px;
-  max-height: 235px;
-  -ms-grid-row-align: center;
-      align-self: center;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  grid-template: "a" 6em "a" 6em "a" 6em;
+  gap: 3em;
   margin-bottom: 8em;
 }
 
@@ -62,16 +62,16 @@
 
 .slider-item > .slider-item-text > .slider-item-header {
   font-family: 'Proxima Nova Bold', sans-serif;
-  font-size: 27pt;
+  font-size: 36px;
 }
 
 .slider-item > .slider-item-text > .slider-item-desc {
-  font-size: 10.5pt;
+  font-size: 14px;
 }
 
 .slider-item > .slider-item-text > .slider-item-more {
   text-transform: uppercase;
-  font-size: 10.5pt;
+  font-size: 14px;
 }
 
 .slider-item > .slider-item-text > .slider-item-more:after {

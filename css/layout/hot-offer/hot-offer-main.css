@@ -32,15 +32,15 @@
 
 #hot-offer-1 > .hot-offer-text > .hot-offer-header {
   font-family: 'Proxima Nova Bold', sans-serif;
-  font-size: 18pt;
+  font-size: 24px;
 }
 
 #hot-offer-1 > .hot-offer-text > .hot-offer-desc {
-  font-size: 9pt;
+  font-size: 12px;
 }
 
 #hot-offer-1 > .hot-offer-text > .hot-offer-price {
-  font-size: 18pt;
+  font-size: 24px;
 }
 
 #hot-offer-1 > .hot-offer-text > .hot-offer-price:before {
@@ -74,11 +74,11 @@
 
 #hot-offer-2 > .hot-offer-text > .hot-offer-header {
   font-family: 'Proxima Nova Bold', sans-serif;
-  font-size: 18pt;
+  font-size: 24px;
 }
 
 #hot-offer-2 > .hot-offer-text > .hot-offer-price {
-  font-size: 18pt;
+  font-size: 24px;
 }
 
 #hot-offer-2 > .hot-offer-text > .hot-offer-price:before {
@@ -110,15 +110,15 @@
 
 #hot-offer-3 > .hot-offer-text > .hot-offer-header {
   font-family: 'Proxima Nova Bold', sans-serif;
-  font-size: 18pt;
+  font-size: 24px;
 }
 
 #hot-offer-3 > .hot-offer-text > .hot-offer-desc {
-  font-size: 9pt;
+  font-size: 12px;
 }
 
 #hot-offer-3 > .hot-offer-text > .hot-offer-price {
-  font-size: 18pt;
+  font-size: 24px;
 }
 
 #hot-offer-3 > .hot-offer-text > .hot-offer-price:before {

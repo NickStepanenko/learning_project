@@ -11,12 +11,12 @@
 
 .contact-info-block > div {
   max-width: 268.59px;
-  font-size: 9pt;
+  font-size: 12px;
 }
 
 .contact-info-block > span, .contact-info-block svg {
   font-family: 'Proxima Nova SemiBold', sans-serif;
-  font-size: 13.5pt;
+  font-size: 18px;
 }
 
 .contact-info-block .contact-info-follow-us-icons {

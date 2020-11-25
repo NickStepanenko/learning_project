@@ -6,15 +6,15 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 29px;
   width: 478px;
+  padding: 0 0 1em;
 }
 
 .best-seller-nav > .best-seller-nav-item {
   display: inline-block;
   cursor: pointer;
   font-family: 'Proxima Nova Semibold', sans-serif;
-  font-size: 10.5pt;
+  font-size: 14px;
   -webkit-transition: color 0.3s;
   transition: color 0.3s;
 }
@@ -42,13 +42,12 @@
   display: -ms-grid;
   display: grid;
   grid-template: "a b c d" 364px "a b c d" 364px;
+  gap: 1em;
 }
 
 .best-seller-items > .best-seller-item {
   display: -ms-grid;
   display: grid;
-  width: 270px;
-  height: 349px;
   border: 2px solid #F6F7F8;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -71,7 +70,7 @@
   height: 20px;
   border-radius: 10%;
   font-family: 'Proxima Nova Semibold', sans-serif;
-  font-size: 10.5pt;
+  font-size: 14px;
   padding: 0.1em 0;
 }
 
@@ -86,7 +85,6 @@
       -ms-flex-pack: center;
           justify-content: center;
   overflow: hidden;
-  cursor: pointer;
   -ms-flex-item-align: end;
       align-self: flex-end;
 }
@@ -119,15 +117,28 @@
           transform: translateY(100%);
 }
 
-.best-seller-items > .best-seller-item > .best-seller-item-img > .best-seller-item-img-hover > div {
+.best-seller-items > .best-seller-item > .best-seller-item-img > .best-seller-item-img-hover > button {
   border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0);
   border: 2px solid rgba(51, 160, 255, 0.25);
   padding: 0.8em;
   margin: 0 0.4em;
+  -webkit-transition: background-color .3s;
+  transition: background-color .3s;
 }
 
-.best-seller-items > .best-seller-item > .best-seller-item-img > .best-seller-item-img-hover > div > i {
+.best-seller-items > .best-seller-item > .best-seller-item-img > .best-seller-item-img-hover > button > i {
   color: #33A0FF;
+}
+
+.best-seller-items > .best-seller-item > .best-seller-item-img > .best-seller-item-img-hover > button:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.45);
+}
+
+.best-seller-items > .best-seller-item > .best-seller-item-img > .best-seller-item-img-hover > button:focus {
+  cursor: pointer;
+  outline: 0;
 }
 
 .best-seller-items > .best-seller-item > .best-seller-item-img:hover > img {
@@ -140,7 +151,7 @@
 
 .best-seller-items > .best-seller-item > .best-seller-item-name {
   font-family: 'Proxima Nova Semibold', sans-serif;
-  font-size: 10.5pt;
+  font-size: 14px;
   text-align: center;
   height: 100%;
   -webkit-transform: translateY(50%);

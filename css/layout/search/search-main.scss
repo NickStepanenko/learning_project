@@ -1,6 +1,10 @@
+.search {
+    padding: 7em 0;
+}
+
 .search-content {
     display: flex;
-    margin: 7em auto 0;
+    margin: 0 auto;
     justify-content: center;
     width: 600px;
     height: 60px;
@@ -12,7 +16,7 @@
         margin: 0;
         padding: 1em 1em;
         transition: border .3s ease;
-        font-size: 10.5pt;
+        font-size: 14px;
 
         &:focus {
             outline: none;
@@ -22,26 +26,22 @@
 
         &::placeholder {
             font-family: 'Proxima Nova SemiBold', sans-serif;
-            font-size: 10.5pt;
+            font-size: 14px;
             color: rgba(126, 126, 126, 35%);
         }
     }
 
-    & > span {
+    & > button {
         border-radius: 0 0.5em 0.5em 0;
         border: solid #2E90E5;
         width: 20%;
         background-color: #2E90E5;
         margin: 0;
         cursor: pointer;
-
-        & > div {
-            color: white;
-            text-align: center;
-            font-size: 10.5pt;
-            font-family: 'Proxima Nova Bold', sans-serif;
-            transform: translateY(100%);
-        }
+        color: white;
+        text-align: center;
+        font-size: 14px;
+        font-family: 'Proxima Nova Bold', sans-serif;
 
         &:focus {
             outline: none;

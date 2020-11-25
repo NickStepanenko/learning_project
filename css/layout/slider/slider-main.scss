@@ -30,15 +30,10 @@
     align-items: center;
 
     & > .slider-item-text {
-        display: grid;
+        display: flex;
+        flex-direction: column;
         max-width: 330px;
-        max-height: 235px;
-        align-self: center;
-        justify-self: center;
-        grid-template:
-            "a" 6em
-            "a" 6em
-            "a" 6em;
+        gap: 3em;
         margin-bottom: 8em;
 
         & > div {
@@ -47,16 +42,16 @@
 
         & > .slider-item-header {
             font-family: 'Proxima Nova Bold', sans-serif;
-            font-size: 27pt;
+            font-size: 36px;
         }
         
         & > .slider-item-desc {
-            font-size: 10.5pt;
+            font-size: 14px;
         }
 
         & > .slider-item-more {
             text-transform: uppercase;
-            font-size: 10.5pt;
+            font-size: 14px;
         
             &:after {
                 content: 'more';

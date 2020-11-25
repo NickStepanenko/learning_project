@@ -1,5 +1,5 @@
 .latest-news {
-    margin: 7em 0px 0px;
+    padding: 7em 0px 0px;
 }
 
 .latest-news-container {
@@ -29,16 +29,16 @@
     padding: 1em 0em 1em 1.4em;
 
     & > .latest-news-date {
-        font-size: 10.5pt;
+        font-size: 14px;
         color: #C1C8CE;
     }
 
     & > .latest-news-name {
-        font-size: 13.5pt;
+        font-size: 18px;
         font-family: 'Proxima Nova Bold', sans-serif;
     }
     
     & > .latest-news-desc {
-        font-size: 10.5pt;
+        font-size: 14px;
     }
 }

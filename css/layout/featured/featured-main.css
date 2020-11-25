@@ -1,5 +1,5 @@
 .featured {
-  margin: 7em 0px 0px;
+  padding: 7em 0px 0px;
 }
 
 .featured-container {
@@ -41,7 +41,7 @@
 }
 
 .featured-text > .featured-item-name {
-  font-size: 10.5pt;
+  font-size: 14px;
   font-family: 'Proxima Nova Bold', sans-serif;
 }
 
