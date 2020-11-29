@@ -206,6 +206,23 @@ console.log('Сумма всех цифр: ' + summ);
 console.log('Произведение всех цифр: ' + increase);
 console.log('');
 
+console.log('4. Докажите, что для множества натуральных чисел верно 1+2+...+n = n(n+1)/2.');
+var nValue = randomInt(1, 15);
+console.log('Число: ' + nValue);
+
+var leftPart = 0
+var rightPart = 0
+
+for(let i = 0; i <= nValue; i++)
+{
+    leftPart += i;
+}
+
+rightPart = nValue * (nValue + 1) / 2;
+
+console.log('Равенство левой и правой части: ' + (leftPart == rightPart));
+console.log('');
+
 console.log('5. Вывести на экран столько элементов ряда Фибоначчи, сколько указал пользователь.');
 let fibNum = randomInt(1, 15);
 let fibArr = [];
