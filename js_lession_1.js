@@ -268,3 +268,105 @@ for(let i = 0; i <= (randomArr2.length / 2); i++)
 
 console.log('Массив после изменений: ' + randomArr2);
 console.log('');
+
+console.log('3. Поменять местами первую и вторую половину массива.');
+let randomArr3 = [];
+
+for(let i = 0; i < 9; i++)
+{
+    randomArr3.push(randomInt(1, 20));
+}
+console.log('Старый массив: ' + randomArr3);
+
+let firstHalf = [];
+let secondHalf = [];
+let midValue = null;
+
+for(let i = 0; i < randomArr3.length; i++)
+{
+    if(i < Math.floor(randomArr3.length / 2))
+    {
+        firstHalf.push(randomArr3[i]);
+    }
+    else if(i > Math.floor(randomArr3.length / 2))
+    {
+        secondHalf.push(randomArr3[i]);
+    }
+    else
+    {
+        midValue = randomArr3[i];
+    }
+}
+
+console.log('Новый массив: ' + [...secondHalf, midValue, ...firstHalf]);
+console.log('');
+
+console.log('4. Найти в массиве те элементы, значение которых меньше среднего арифметического, взятого от всех элементов массива.');
+let randomArr4 = [];
+var elem = 0;
+summ = 0;
+
+for(let i = 0; i < 10; i++)
+{
+    elem = randomInt(1, 25);
+    randomArr4.push(elem);
+    summ += elem;
+}
+
+midValue = summ / randomArr4.length;
+let resArr = [];
+
+for(let i = 0; i < randomArr4.length; i++)
+{
+    if(randomArr4[i] < midValue)
+    {
+        resArr.push(randomArr4[i]);
+    }
+}
+
+console.log('Массив: ' + randomArr4);
+console.log('Среднее: ' + midValue);
+console.log('Значения меньше среднего: ' + resArr);
+console.log('');
+
+console.log('5. В массиве найти сумму элементов, находящихся между минимальным и максимальным элементами. Сами минимальный и максимальный элементы в сумму не включать.');
+let randomArr5 = [];
+elem = 0;
+minIndex = 0;
+maxIndex = 0;
+summ = 0;
+
+for(let i = 0; i < 10; i++)
+{
+    elem = randomInt(1, 25);
+    randomArr5.push(elem);
+    
+    if(elem > randomArr5[maxIndex])
+    {
+        maxIndex = i;
+    }
+    if(elem < randomArr5[minIndex])
+    {
+        minIndex = i;
+    }
+}
+
+if(minIndex <= maxIndex)
+{
+    for(let i = minIndex; i < maxIndex; i++)
+    {
+        summ += randomArr5[i];
+    }
+}
+else if(minIndex > maxIndex)
+{
+    for(let i = maxIndex; i > minIndex; i--)
+    {
+        summ += randomArr5[i];
+    }
+}
+
+console.log('Массив: ' + randomArr5);
+console.log('Минимальное: ' + randomArr5[minIndex]);
+console.log('Максимальное: ' + randomArr5[maxIndex]);
+console.log('Сумма значений между мин и макс: ' + summ);
